@@ -1,9 +1,7 @@
 var chars = "abcdefghijklmnopqrstuvwxyz";
 const log = console.log;
 function handleEncrypt(plaintext,key,pc) {
-    // log(plaintext.replace(" ",""))
     plaintext = plaintext.split(" ").join("")
-    // log(plaintext)
     console.log(Encrypt(normalize(plaintext), key, pc));
 }
 function replaceAll(str, find, replace) {
@@ -13,11 +11,6 @@ function handleDecrypt(cipherText,key) {
     if (validate(cipherText, 'Please enter some cipherText (letters only).')) return;
     var key = normalize(key);
     log(Decrypt(cipherText, key));
-    // ======= \\
-    // log(plaintext.replace(" ",""))
-    // plaintext = plaintext.split(" ").join("")
-    // log(plaintext)
-    // console.log(Encrypt(normalize(plaintext), key, pc));
 }
 
 function Encrypt(plaintext, key, pc) {
@@ -87,7 +80,7 @@ function validate(text, message) {
     }
 }
 function normalize(value) {
-    return value.toLowerCase()/*.replace(/[^a-z]/g, "")*/;
+    return value.toLowerCase();
 }
 handleEncrypt("THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG","cornell"," ");
 handleDecrypt("tkodeguwmry inptd cfeho qouez hbxol erjva ","cornell");
@@ -98,4 +91,3 @@ handleDecrypt("tkodeguwmry inptd cfeho qouez hbxol erjva ","cornell");
 ].forEach( cipher => {
     log(handleDecrypt(cipher[0], cipher[1]));
 });
-//tkodeguwmryxinptdxcfehoxqouezxhbxolxerjvax
