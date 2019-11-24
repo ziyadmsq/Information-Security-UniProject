@@ -18,3 +18,6 @@ In the server side which I used Node js and Express framework to implement the e
 `npm start`<br/>
 
 then open a browser and open the URL `localhost:3000` (if it's not open automagically)
+
+output should be like :
+<img src="screenshot.png" />

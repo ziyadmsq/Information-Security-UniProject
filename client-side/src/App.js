@@ -91,7 +91,10 @@ class App extends React.Component {
           <Card.Body>
             <Card.Title>Defence Assignment</Card.Title>
             <Card.Text>
-              using Node js to [] and []. for the client side i used reactjs
+              I had been implementing the Keyword Columnar Cipher using Node js and React for the client-side to represent the implementation
+            </Card.Text>
+            <Card.Text>
+              In the server side which I used Node js and Express framework to implement the encryption and the decryption with restful APIs to interact with the client side and to have fun.
             </Card.Text>
             <InputGroup compact>
               <Select defaultValue="encrypt" onChange={this.handleTeacherChange}>
